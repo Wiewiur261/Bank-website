@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maze Bank</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Your bank account</h1>
+      <div id="balance">Stan konta: <span id="balanceAmount">0</span> PLN</div>
+
+      <div class="transaction">
+        <input type="number" id="amountInput" placeholder="Podaj kwotę" />
+        <button onclick="changeBalance(true)">Wpłata</button>
+        <button onclick="changeBalance(false)">Wypłata</button>
+      </div>
+
+      <h2>Historia transakcji</h2>
+      <ul id="history"></ul>
+      <button class="reset-btn" onclick="resetAccount()">Reset konta</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
